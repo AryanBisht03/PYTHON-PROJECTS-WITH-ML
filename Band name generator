@@ -1,0 +1,9 @@
+#print function is used to print the input or string given by the user
+print("Welcome to the band name generator.")
+print("what is the name of the city you grew up in?")
+#the input function is used to take the inpute from the user in the form of a string
+name=input()
+print("Enter name of your pet")
+pet=input()
+#the f string is used to access the values as it is by the name, we dont need to typecast the data. 
+print(f"The name of your band is {name} {pet}")
