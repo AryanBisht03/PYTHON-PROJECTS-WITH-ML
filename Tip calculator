@@ -1,0 +1,19 @@
+# Tip calculator calculates the tip of each person and then devides the bill among each people.
+print("Welcome To The Tip Calculator!")
+
+print("What Was The Total Bill?")
+bill=input()
+
+print("How Much Tip Do You Want To Give? 10, 12, or 15?")
+tip=input()
+
+#This calculates the tip.
+Bill_after_tip=float(bill)+(float(bill)*float(tip)/100)
+print("How many people to split the bill?")
+people=input()
+
+#This splits the bill into each person.
+each_bill=float(Bill_after_tip)/int(people)
+
+#The round function rounds the bill upto 2 places.
+print(f"Each person should pay: ${round(each_bill,2)}")
