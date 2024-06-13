@@ -1,7 +1,7 @@
 import random
 print("Welcome to Rock, Paper and Scissors game!")
 print("Enter your Choice")
-choice=input()
+choice=int(input())
 if choice==0:
   print("""
       _______
