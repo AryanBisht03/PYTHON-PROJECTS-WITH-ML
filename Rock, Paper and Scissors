@@ -1,0 +1,98 @@
+import random
+print("Welcome to Rock, Paper and Scissors game!")
+print("Enter your Choice")
+choice=input()
+if choice==0:
+  print("""
+      _______
+  ---'   ____)
+        (_____)
+        (_____)
+        (____)
+  ---.__(___)
+  """)
+  print("You choose Rock!")
+elif choice==1:
+  print("""
+       _______
+  ---'    ____)____
+             ______)
+            _______)
+           _______)
+  ---.__________)
+  """)
+  print("You choose Paper!")
+else:
+  print("""
+      _______
+  ---'   ____)____
+            ______)
+         __________)
+        (____)
+  ---.__(___)
+  """)
+  print("You choose Scissors!")
+
+print("Computer's Turn")
+gesture=random.randint(0,2)
+if gesture==0:
+  print("""
+      _______
+  ---'   ____)
+        (_____)
+        (_____)
+        (____)
+  ---.__(___)
+  """)
+  print("Computer choose Rock!")
+elif gesture==1:
+  print("""
+       _______
+  ---'    ____)____
+             ______)
+            _______)
+           _______)
+  ---.__________)
+  """)
+  print("Computer choose Paper!")
+else:
+  print("""
+      _______
+  ---'   ____)____
+            ______)
+         __________)
+        (____)
+  ---.__(___)
+  """)
+  print("Computer choose Scissors!")
+
+if choice==0 and gesture==1:
+  print("Computer Wins!")
+elif choice==1 and gesture==0:
+  print("You Wins!")
+elif choice==0 and gesture==2:
+  print("You Wins!")
+elif choice==2 and gesture==0:
+  print("Computer Wins!")
+elif choice==0 and gesture==0:
+  print("Draw!!")
+elif choice==1 and gesture==0:
+  print("You Wins!")
+elif choice==0 and gesture==1:
+  print("Computer Wins!")
+elif choice==1 and gesture==2:
+  print("Computer Wins!")
+elif choice==2 and gesture==1:
+  print("You Wins!")
+elif choice==1 and gesture==1:
+  print("Draw!!")
+elif choice==2 and gesture==0:
+  print("You Wins!")
+elif choice==1 and gesture==2:
+  print("Computer Wins!")
+elif choice==2 and gesture==0:
+  print("You Wins!")
+elif choice==0 and gesture==2:
+  print("You Wins!")
+elif choice==2 and gesture==2:
+  print("Draw!!")
